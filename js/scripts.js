@@ -1,9 +1,7 @@
-// plik scripts.js - podawanie imienia - z komentarzami, czyli zadanie 2.
-var name = prompt('Wpisz swoje imię'); 
-/*
-alert('Witaj, ' + name); 
-*/
+// plik scripts.js - pole trójkąta
+var a = prompt('Podaj wartość dla podstawy trójkąta');
+	h = prompt('Podaj wartość wysokości trójkąta')
+triangleArea = a*h/2
+alert('Pole trójkąta wynosi:' + triangleArea);
 //Komunikat dla konsoli
-
-console.log('Witaj, ' + name);
-//ostatni koment
+console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
