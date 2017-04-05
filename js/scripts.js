@@ -1,6 +1,6 @@
 // plik scripts.js - pole trójkąta
 var a = prompt('Podaj wartość dla podstawy trójkąta');
-	h = prompt('Podaj wartość wysokości trójkąta');
+var	h = prompt('Podaj wartość wysokości trójkąta');
 triangleArea = a * h / 2
 alert('Pole trójkąta wynosi:' + triangleArea);
 //Komunikat dla konsoli
