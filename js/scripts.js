@@ -1,12 +1,10 @@
-var a = prompt('Podaj wartość podstawy'),
-	h = prompt('Podaj wartość wysokości');
-triangleArea = a * h / 2
+var a = prompt('Podaj wartość podstawy');
+var h = prompt('Podaj wartość wysokości');
 function getTriangleArea(a,h) {
-	if (a <= 0 || h <= 0) {
-			return alert('nieprawidłowe dane')
-	} else {
-	triangleArea = a * h / 2
-	}
-	return alert('Wynik działania to: '+triangleArea) 
-}
-alert('Wynik działania to: '+triangleArea) 
+    if (a <= 0 || h <= 0) {
+            return 'nieprawidłowe dane';
+    }
+    return a * h / 2;
+};
+var result = getTriangleArea(a,h);
+alert ('wynik działania brzmi ' +result)
