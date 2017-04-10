@@ -3,14 +3,14 @@ var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na 
 var splitResult = text.split (" ", 1);
 var wordUpperCased = anyWord.toUpperCase();
 var replacedWord = text.replace(splitResult, wordUpperCased);
-function getTextLenght(replacedWord) {
-	return replacedWord.lenght
+function getTextLength(replacedWord) {
+	return replacedWord.length
 };
-var sentenceLenght = getTextLenght();
-function getslicingPoint (sentenceLenght) {
-	return +sentenceLenght / 2;
+var sentenceLength = getTextLength(replacedWord);
+function getslicingPoint (sentenceLength) {
+	return +sentenceLength / 2;
 }
-var slicingPoint = getslicingPoint();
-console.log('Zdanie z podmienionym słowem ma ' +sentenceLenght);
+var slicingPoint = getslicingPoint(sentenceLength);
+console.log('Zdanie z podmienionym słowem ma ' +sentenceLength);
 console.log(wordUpperCased.length);
 alert(replacedWord.slice(0, slicingPoint))
