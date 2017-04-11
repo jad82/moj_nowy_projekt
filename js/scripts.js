@@ -1,12 +1,11 @@
-var a = prompt('Podaj wartość podstawy'),
-	h = prompt('Podaj wartość wysokości');
-triangleArea = a * h / 2
-function getTriangleArea(a,h) {
-	if (a <= 0 || h <= 0) {
-			return alert('nieprawidłowe dane')
-	} else {
-	triangleArea = a * h / 2
-	}
-	return alert('Wynik działania to: '+triangleArea) 
+var x = prompt('Określ wysokość drzewka');
+function drawTree(x) {
+ for (var i = 0; i <= x - 1; i++) {
+   var star = '';    
+   for (var j = 0; j <= i; j++) {
+     star += ' *';
+   }
+   console.log(star);
+ }
 }
-alert('Wynik działania to: '+triangleArea) 
+drawTree(x);
